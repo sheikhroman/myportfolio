@@ -1,10 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    height: 100vh;
+
+body {
     background: #161513;
     color: #fff;
-    margin: 2rem 4rem;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 768px) {
+    body {
+        margin: 2rem 4rem;
+    }
 }

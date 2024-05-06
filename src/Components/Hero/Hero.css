@@ -1,23 +1,102 @@
-.hero img{
-    width: 35vh;
+.hero {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
 }
+
+.hero h1::selection {
+  background: #369a3e;
+}
+
+.hero p::selection {
+  background: #369a3e;
+}
+
+.hero img {
+  width: 33vh;
+}
+
 .hero h1 .english {
-    animation: fadeInOut 3s linear infinite;
+  animation: fadeInOut 3s linear infinite;
+}
+
+.hero h1 .bengali {
+  animation: fadeInOut 3s linear infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.hero h1 {
+  text-align: center;
+  width: 70%;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.hero p {
+  width: 50%;
+  text-align: center;
+  font: 1rem;
+  line-height: 2rem;
+}
+
+.hero-action {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.hero-connect,
+.hero-resume {
+  background: transparent;
+  border: 2px solid #04eb17a7;
+  color: rgba(167, 255, 220, 0.895);
+  text-shadow: 0 0 10px #e2f916, 0 0 10px #369a3e;
+  padding: 1rem 1.6rem;
+  border-radius: 3rem;
+  font-size: 1.3rem;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.hero-connect:hover,
+.hero-resume:hover {
+  background: linear-gradient(45deg, #04eb176b, #dede22e2);
+  color: white;
+  text-shadow: 0 0 10px #16b1f9, 0 0 10px #d62124;
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
   }
   
-  .hero h1 .bengali {
-    animation: fadeInOut 3s linear infinite;
+  .hero p {
+    width: 80%;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
   }
   
-  @keyframes fadeInOut {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+  .hero img {
+    width: 50%;
   }
-  
+  .hero-connect,
+.hero-resume{
+  font-size: .7rem;
+}
+}
