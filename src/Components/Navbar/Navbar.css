@@ -27,7 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 170px;
+    
 }
 .nav-menu{
     display: flex;
@@ -48,20 +48,21 @@
     background-color: transparent;
 }
 .nav-connect {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.6rem;
     border-radius: 3rem;
-    background: linear-gradient(45deg, #e2f916, #369a3e);
+    background: linear-gradient(45deg, #04eb17a7, #c5c505ba);
     font-size: 1.3rem;
+    color: black;
+    text-shadow: 0 0 10px #16b1f9, 0 0 10px #d62124;
     border: 2px solid transparent; 
-    transition: all 1s ease-in-out; 
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .nav-connect:hover {
-    border-radius: 3rem; 
     background: transparent;
-    transition: 1s;
     border-color: #369a3e; 
     color: rgba(167, 255, 220, 0.895);
     text-shadow: 0 0 10px #e2f916, 0 0 10px #369a3e;
+    transform: scale(1.05); /* Slightly scale up on hover for smooth effect */
 }
 
