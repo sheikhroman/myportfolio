@@ -1,0 +1,67 @@
+/* logo */
+.logo {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Cedarville Cursive", cursive;
+    transition: color 0.5s ease; 
+}
+
+.logo::selection {
+    color: rgba(167, 255, 220, 0.895);
+    text-shadow: 0 0 10px #4bf916, 0 0 10px #369a3e;
+    background-color: transparent;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; color: rgba(167, 255, 220, 0.895); } 
+    50% { opacity: 0.5; } 
+}
+
+.logo:hover {
+    animation: blink 0.5s infinite alternate; 
+}
+
+/* navbar */
+.navbar{
+    font-family: "Jersey 15", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+    font-size: 1.3rem;
+}
+.nav-menu li:hover {
+    cursor: pointer;
+    color: rgb(6, 245, 149);
+    border-bottom: 2px solid yellow;
+    text-shadow: 0 0 10px #e2f916, 0 0 10px #369a3e;
+    transition: .5s;
+}
+.nav-menu li::selection{
+    text-shadow: 0 0 10px #e2f916, 0 0 10px #369a3e;
+    background-color: transparent;
+}
+.nav-connect {
+    padding: 1rem 1.5rem;
+    border-radius: 3rem;
+    background: linear-gradient(45deg, #e2f916, #369a3e);
+    font-size: 1.3rem;
+    border: 2px solid transparent; 
+    transition: all 1s ease-in-out; 
+}
+
+.nav-connect:hover {
+    border-radius: 3rem; 
+    background: transparent;
+    transition: 1s;
+    border-color: #369a3e; 
+    color: rgba(167, 255, 220, 0.895);
+    text-shadow: 0 0 10px #e2f916, 0 0 10px #369a3e;
+}
+
