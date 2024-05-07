@@ -88,3 +88,11 @@
     color: rgba(167, 255, 220, 0.895);
   text-shadow: 0 0 10px #e2f91685, 0 0 10px #369a3e;
 }
+.about-achivement p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.about-skill:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
