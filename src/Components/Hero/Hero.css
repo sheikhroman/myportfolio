@@ -60,6 +60,9 @@
   font-weight: 500;
   margin-bottom: 2rem;
 }
+.hero p{
+  font-size: 1.2rem;
+}
 
 .hero-connect,
 .hero-resume {
@@ -67,9 +70,10 @@
   border: 2px solid #04eb17a7;
   color: rgba(167, 255, 220, 0.895);
   text-shadow: 0 0 10px #e2f916, 0 0 10px #369a3e;
-  padding: 1rem 1.6rem;
+  padding: 1rem 1.1rem;
   border-radius: 3rem;
-  font-size: 1.3rem;
+  font-family: "Jersey 15", sans-serif;
+  font-size: 1.2rem;
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.3s ease-in-out;
 }
 
@@ -97,6 +101,6 @@
   }
   .hero-connect,
 .hero-resume{
-  font-size: .7rem;
+  font-size: 1rem;
 }
 }
