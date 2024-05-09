@@ -1,0 +1,24 @@
+.mywork{
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem;
+}
+.mywork-title{
+    font-family: "Sedgwick Ave", cursive;
+    position: relative;
+}
+.mywork-title h1{
+    padding: 0  2rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+.mywork-title .theme {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
