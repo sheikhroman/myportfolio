@@ -64,8 +64,7 @@
   font-size: 1.2rem;
 }
 
-.hero-connect,
-.hero-resume {
+.hero-connect{
   background: transparent;
   border: 2px solid #04eb17a7;
   color: rgba(167, 255, 220, 0.895);
@@ -76,9 +75,23 @@
   font-size: 1.2rem;
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.3s ease-in-out;
 }
+.hero-resume a{
+  background: transparent;
+  border: 2px solid #04eb17a7;
+  color: rgba(167, 255, 220, 0.895);
+  text-shadow: 0 0 10px #e2f916, 0 0 10px #369a3e;
+  padding: 1rem 1.1rem;
+  border-radius: 3rem;
+  font-family: "Jersey 15", sans-serif;
+  font-size: 1.2rem;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+.hero-resume a{
+  text-decoration: none;
+}
 
 .hero-connect:hover,
-.hero-resume:hover {
+.hero-resume a:hover {
   background: linear-gradient(45deg, #04eb176b, #dede22e2);
   color: white;
   text-shadow: 0 0 10px #16b1f9, 0 0 10px #d62124;

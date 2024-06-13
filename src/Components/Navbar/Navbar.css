@@ -50,7 +50,18 @@
     background-color: transparent;
 }
 
-.nav-connect {
+/* .nav-connect {
+    padding: 1rem 1.6rem;
+    border-radius: 3rem;
+    background: linear-gradient(45deg, #04eb17a7, #c5c505ba);
+    font-size: 1.3rem;
+    color: black;
+    text-shadow: 0 0 10px #16b1f9, 0 0 10px #d62124;
+    border: 2px solid transparent; 
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.3s ease-in-out;
+} */
+.nav-connect a{
+    text-decoration: none;
     padding: 1rem 1.6rem;
     border-radius: 3rem;
     background: linear-gradient(45deg, #04eb17a7, #c5c505ba);
@@ -60,8 +71,7 @@
     border: 2px solid transparent; 
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.3s ease-in-out;
 }
-
-.nav-connect:hover {
+.nav-connect a:hover {
     background: transparent;
     border-color: #369a3e; 
     color: rgba(167, 255, 220, 0.895);

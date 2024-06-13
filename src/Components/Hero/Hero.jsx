@@ -10,7 +10,7 @@ const Hero = () => {
     const interval = setInterval(() => {
       setIsEnglish(prev => !prev);
     }, 5000);
-    
+
     return () => clearInterval(interval);
   }, []);
 
@@ -18,12 +18,16 @@ const Hero = () => {
     <div className='hero'>
       <img src={profile} alt="" />
       <h1>
-        I am <span className={isEnglish ? "english" : "bengali"} style={{textShadow: '0 0 10px #369a3e, 0 0 10px #369a3e', transition: 'text-shadow 0.5s ease', color: 'rgb(6, 245, 149)'}}>{isEnglish ? "Sheikh Roman" : "শেখ রোমান"}</span>
+        I am <span className={isEnglish ? "english" : "bengali"} style={{ textShadow: '0 0 10px #369a3e, 0 0 10px #369a3e', transition: 'text-shadow 0.5s ease', color: 'rgb(6, 245, 149)' }}>{isEnglish ? "Sheikh Roman" : "শেখ রোমান"}</span>
       </h1>
       <p>Web developer skilled in crafting user-friendly websites with HTML, CSS, and JavaScript for optimal functionality and design.</p>
       <div className="hero-action">
         <div className="hero-connect">Connect With Me</div>
-        <div className="hero-resume">My Resume</div>
+        <div className="hero-resume">
+    <a href="https://rxresu.me/sheikhroman63/genetic-usual-ferret" target="_blank" download>My Resume</a>
+</div>
+
+
       </div>
     </div>
   );
